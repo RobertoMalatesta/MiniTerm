@@ -78,3 +78,8 @@ void parse_command(char* command, char ** flags)
 
 	printf("Flag1: %s", flags[1]); 
 }
+
+void
+ssh()
+{
+}
