@@ -17,6 +17,7 @@
 #define MAX 1024
 #define MAX_COMMAND 256
 #define MAX_ARGC 16
+#define IFS " "
 /*********************************************/
 
 
@@ -24,22 +25,32 @@
 bool stt = IN_SESSION;
 /********************************************/
 
+typedef struct
+full_command
+{
+	int arg_c;
+	char *arg_v[MAX_COMMAND];
+} command;
+
 int main()
 {
 	WAIT_FOR_COMMAND(USER);
 	char full_command_string[MAX_COMMAND];
+	command last_command;
 	get_command(full_command_string);
-	/*
-	printf("%s\n", full_command_string);
-	*/
+	parse_command(full_command_string, &last_command);
+	
+	int i;
+	
+	//printf("In main flags[0]: %s\n", &last_command.arg_v[0]);
+	
+	for(i = 0; i < 3; i++)
+	{
+		printf("%s\n", &last_command.arg_v[i]);
+		
+	}
+	
 }
-
-typedef struct 
-full_command
-{
-	int arg_c;
-	char arg_v[MAX_ARGC];
-} command;
 
 void 
 get_command(char* full_command_string)
@@ -55,16 +66,16 @@ get_command(char* full_command_string)
 }
 
 void
-parse_command(char* full_command_string, command last_command)
+parse_command(char* full_command_string, command* last_command_ptr)
 {
-	int i, cur_arg = 0;
-	for(i = 0; i < strlen(full_command_string); i++)
+	int i=0;
+	char * ptr = strtok(full_command_string, IFS);
+	while(ptr != NULL)
 	{
-		if(full_command_string[i] == ' ')
-		{
-			strcpy();
-		}
+		strcpy(&last_command_ptr->arg_v[i++], ptr);
+		ptr = strtok(NULL, IFS);
 	}
+
 }
 
 void
