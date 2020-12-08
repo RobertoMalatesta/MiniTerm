@@ -86,6 +86,7 @@ list()
 void
 ssh()
 {
+	printf("SSH\n");
 }
 
 void
