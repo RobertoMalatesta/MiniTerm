@@ -82,6 +82,7 @@ void
 list()
 {
 	printf("LIST\n");
+	pritnf("TEST");
 }
 void
 ssh()
