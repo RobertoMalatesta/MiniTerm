@@ -79,8 +79,9 @@ parse_command(char* full_command_string, command* last_command_ptr)
 }
 
 void
-lish()
+list()
 {
+	printf("LIST\n");
 }
 void
 ssh()
