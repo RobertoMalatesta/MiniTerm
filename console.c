@@ -43,8 +43,9 @@ int main()
 	int i;
 	
 	//printf("In main flags[0]: %s\n", &last_command.arg_v[0]);
-	
-	for(i = 0; i < 3; i++)
+
+	printf("Number of command: %d\n", last_command.arg_c);	
+	for(i = 0; i < last_command.arg_c; i++)
 	{
 		printf("%s\n", &last_command.arg_v[i]);
 		
@@ -70,12 +71,14 @@ parse_command(char* full_command_string, command* last_command_ptr)
 {
 	int i=0;
 	char * ptr = strtok(full_command_string, IFS);
+	last_command_ptr->arg_c = 0;
 	while(ptr != NULL)
 	{
 		strcpy(&last_command_ptr->arg_v[i++], ptr);
 		ptr = strtok(NULL, IFS);
+		last_command_ptr->arg_c += 1;
 	}
-
+	
 }
 
 void
