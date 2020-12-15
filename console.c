@@ -50,6 +50,8 @@ int main()
 		printf("%s\n", &last_command.arg_v[i]);
 		
 	}
+
+	do_system_command(&last_command.arg_v[0]);
 	
 }
 
@@ -82,10 +84,17 @@ parse_command(char* full_command_string, command* last_command_ptr)
 }
 
 void
+do_system_command(char* system_command)
+{
+	//printf("%s\n", &system_command);
+	system(system_command);
+}
+
+void
 list()
 {
 	printf("LIST\n");
-	pritnf("TEST");
+	printf("TEST");
 }
 void
 ssh()
