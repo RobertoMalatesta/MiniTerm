@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/console.o.dir/console.c.o  -o console.o 

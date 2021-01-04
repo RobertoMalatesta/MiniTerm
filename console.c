@@ -92,7 +92,8 @@ do_system_command(char* system_command)
 }
 
 void
-
+list()
+{
 	printf("LIST\n");
 	printf("TEST");
 }
@@ -110,6 +111,7 @@ ftp()
 void
 check_ct_command(char* command)
 {
+	/* idea
 	for()
 	{
 		if(strcmp() == 0)
@@ -117,4 +119,5 @@ check_ct_command(char* command)
 			return IS_CT_COMMAND;
 		}
 	}
+	*/
 }
