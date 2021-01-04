@@ -92,8 +92,7 @@ do_system_command(char* system_command)
 }
 
 void
-list()
-{
+
 	printf("LIST\n");
 	printf("TEST");
 }
