@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/trung/Documents/Work/DZS/kernel/code/com_communication/src/console.c
+stdio.h
+-
+stdlib.h
+-
+fcntl.h
+-
+string.h
+-
+unistd.h
+-
+errno.h
+-
+termios.h
+-
+time.h
+-
+stdbool.h
+-
+

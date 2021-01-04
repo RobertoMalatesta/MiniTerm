@@ -17,6 +17,7 @@
 #define MAX 1024
 #define MAX_COMMAND 256
 #define MAX_ARGC 16
+#define IS_CT_COMMAND true
 #define IFS " "
 /*********************************************/
 
@@ -105,4 +106,18 @@ ssh()
 void
 ftp()
 {
+}
+
+void
+check_ct_command(char* command)
+{
+	/* idea
+	for()
+	{
+		if(strcmp() == 0)
+		{
+			return IS_CT_COMMAND;
+		}
+	}
+	*/
 }
