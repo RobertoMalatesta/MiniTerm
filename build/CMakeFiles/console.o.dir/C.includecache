@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/trung/Documents/Work/DZS/kernel/code/com_communication/console.c
+/home/trung/Documents/Work/DZS/kernel/code/com_communication/src/console.c
 stdio.h
 -
 stdlib.h

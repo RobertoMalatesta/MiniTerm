@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/trung/Documents/Work/DZS/kernel/code/com_communication")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/trung/Documents/Work/DZS/kernel/code/com_communication")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/trung/Documents/Work/DZS/kernel/code/com_communication/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

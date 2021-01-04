@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = -I/home/trung/Documents/Work/DZS/kernel/code/com_communication/include 
 

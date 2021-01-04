@@ -1,3 +1,0 @@
-/home/trung/Documents/Work/DZS/kernel/code/com_communication/CMakeFiles/rebuild_cache.dir
-/home/trung/Documents/Work/DZS/kernel/code/com_communication/CMakeFiles/console.o.dir
-/home/trung/Documents/Work/DZS/kernel/code/com_communication/CMakeFiles/edit_cache.dir

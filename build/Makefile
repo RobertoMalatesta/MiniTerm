@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/trung/Documents/Work/DZS/kernel/code/com_communication
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/trung/Documents/Work/DZS/kernel/code/com_communication
+CMAKE_BINARY_DIR = /home/trung/Documents/Work/DZS/kernel/code/com_communication/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/trung/Documents/Work/DZS/kernel/code/com_communication/CMakeFiles /home/trung/Documents/Work/DZS/kernel/code/com_communication/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/trung/Documents/Work/DZS/kernel/code/com_communication/build/CMakeFiles /home/trung/Documents/Work/DZS/kernel/code/com_communication/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/trung/Documents/Work/DZS/kernel/code/com_communication/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/trung/Documents/Work/DZS/kernel/code/com_communication/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ console.o/fast:
 	$(MAKE) -f CMakeFiles/console.o.dir/build.make CMakeFiles/console.o.dir/build
 .PHONY : console.o/fast
 
-console.o: console.c.o
+src/console.o: src/console.c.o
 
-.PHONY : console.o
+.PHONY : src/console.o
 
 # target to build an object file
-console.c.o:
-	$(MAKE) -f CMakeFiles/console.o.dir/build.make CMakeFiles/console.o.dir/console.c.o
-.PHONY : console.c.o
+src/console.c.o:
+	$(MAKE) -f CMakeFiles/console.o.dir/build.make CMakeFiles/console.o.dir/src/console.c.o
+.PHONY : src/console.c.o
 
-console.i: console.c.i
+src/console.i: src/console.c.i
 
-.PHONY : console.i
+.PHONY : src/console.i
 
 # target to preprocess a source file
-console.c.i:
-	$(MAKE) -f CMakeFiles/console.o.dir/build.make CMakeFiles/console.o.dir/console.c.i
-.PHONY : console.c.i
+src/console.c.i:
+	$(MAKE) -f CMakeFiles/console.o.dir/build.make CMakeFiles/console.o.dir/src/console.c.i
+.PHONY : src/console.c.i
 
-console.s: console.c.s
+src/console.s: src/console.c.s
 
-.PHONY : console.s
+.PHONY : src/console.s
 
 # target to generate assembly for a file
-console.c.s:
-	$(MAKE) -f CMakeFiles/console.o.dir/build.make CMakeFiles/console.o.dir/console.c.s
-.PHONY : console.c.s
+src/console.c.s:
+	$(MAKE) -f CMakeFiles/console.o.dir/build.make CMakeFiles/console.o.dir/src/console.c.s
+.PHONY : src/console.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... console.o"
 	@echo "... edit_cache"
-	@echo "... console.o"
-	@echo "... console.i"
-	@echo "... console.s"
+	@echo "... src/console.o"
+	@echo "... src/console.i"
+	@echo "... src/console.s"
 .PHONY : help
 
 

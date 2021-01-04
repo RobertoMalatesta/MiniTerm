@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/console.o.dir/console.c.o"
+  "CMakeFiles/console.o.dir/src/console.c.o"
   "console.o.pdb"
   "console.o"
 )

@@ -1,6 +1,7 @@
 #
 #
 #
+
 cmake_minimum_required(VERSION 2.8.12)
 
 #
@@ -13,4 +14,16 @@ project (MiniTerm)
 #
 #
 
-add_executable(console.o console.c)
+include_directories(include)
+
+#
+#
+#
+
+set(SOURCE src/console.c)
+
+#
+#
+#
+
+add_executable(console.o ${SOURCE})
